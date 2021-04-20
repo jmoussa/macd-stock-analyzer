@@ -46,8 +46,8 @@ In the repo's directory:
 ```bash
 python analyzer.py
 ```
-You will see the logging output in the terminal and you can check the `files/` folder for charts and csv's for further analysis.
-
+You should see the logging output in the terminal as shown below, and you can check the `files/` folder for charts and csv's for further analysis.
+![Terminal Screenshot](./files/screenshot.jpg?raw=true)
 
 ## Configuration Tweaks
 

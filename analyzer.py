@@ -1,3 +1,4 @@
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
@@ -6,6 +7,10 @@ import coloredlogs
 
 logger = logging.getLogger(__name__)
 coloredlogs.install(level="DEBUG", logger=logger)
+
+# make sure folders are set
+Path("./files/plots").mkdir(parents=True, exist_ok=True)
+Path("./files/csvs").mkdir(parents=True, exist_ok=True)
 
 # **** START EDITING HERE ****
 HOW_FAR_TO_LOOK_BACK = 5  # in years
