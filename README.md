@@ -1,7 +1,5 @@
 # MACD Stock Analyzer
-
-You input stocks, it outputs some suggested decisions on what to do with those stocks.
-THIS SHOULD NOT BE USED AS A DECISION-MAKER OR STOCK-PICKER, it's just an implementation of a calculation and it's outputs.
+> Analyze specific stocks' MACD and gain further insight into stock trends
 
 ## What is MACD?
 
@@ -89,3 +87,9 @@ This variable ajusts the number of days to check back. Default is set to 14 days
 
 I can't take credit for all of this amazing information, so here's the link to Luke Posey's article that I based this on.
 https://towardsdatascience.com/implementing-macd-in-python-cc9b2280126a
+
+
+## DISCLAIMER
+
+The results presented here are not to be taken as financial advice with regards to how and when to pick your stocks. 
+These are outputs based on an alogrithm, and any actions taken as a result of these outputs should not be done without conducting proper research and consulting professionals.
