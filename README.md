@@ -71,7 +71,8 @@ python analyzer.py
 You should see the logging output in the terminal as shown below, and you can check the `files/` folder for charts and csv's for further analysis.
 ![Terminal Screenshot](./screenshots/screenshot.jpg?raw=true)
 
-Here is an example of what a chart and csv might look like (found in the `files/` folder after output)
+Here is an example of what a chart and csv might look like (found in the `files/` folder after output). 
+It should be noted that these are both for KO (Coca Cola), and are denoted that ticker in their filename for easy identification.
 ![Plot Screenshot](./screenshots/example_plot.jpg?raw=true)
 ![CSV Screenshot](./screenshots/example_csv.jpg?raw=true)
 
