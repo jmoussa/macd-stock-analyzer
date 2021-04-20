@@ -59,8 +59,10 @@ HOW_FAR_TO_LOOK_BACK = 5  # in years
 HOW_MANY_DAYS_TO_CONSIDER = 14  # Changes the Mode of X days to look back when showing final decisions
 ```
 
-HOW_FAR_TO_LOOK_BACK: Total number of years back, to fetch the stock data from. Default is set to 5 years back. **Please note:** the farther back you choose to look, the longer the script will take to finish.
-HOW_MANY_DAYS_TO_CONSIDER: When calculating the final decisions (those that are printed out in the terminal as the result), the script will take into consideration the most common decision (the mode) from a few days prior in order for the user to get a sense of what the previous inclinations (or declinations) toward this stock looked like. 
+**HOW_FAR_TO_LOOK_BACK**: Total number of years back, to fetch the stock data from. Default is set to 5 years back.
+*Please note: the farther back you choose to look, the longer the script will take to finish.*
+
+**HOW_MANY_DAYS_TO_CONSIDER**: When calculating the final decisions (those that are printed out in the terminal as the result), the script will take into consideration the most common decision (the mode) from a few days prior in order for the user to get a sense of what the previous inclinations (or declinations) toward this stock looked like. 
 This variable ajusts the number of days to check back. Default is set to 14 days back.
 
 ## Credit where credit is due
