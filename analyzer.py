@@ -16,24 +16,11 @@ Path("./files/csvs").mkdir(parents=True, exist_ok=True)
 HOW_FAR_TO_LOOK_BACK = 5  # in years
 HOW_MANY_DAYS_TO_CONSIDER = 14  # Changes the Mode of X days to look back when showing final decisions
 STOCKS = [
-    "NRZ",
-    "RDS-B",
-    "T",
-    "KO",
-    "AGNC",
-    "XOM",
-    "SPHD",
-    "VYMI",
-    "TSM",
-    "ICLN",
-    "THCX",
-    "DVY",
-    "VT",
-    "VYM",
-    "IJR",
-    "SDY",
-    "VTI",
-    "VUG",
+    "NFLX",
+    "MSFT",
+    "AMZN",
+    "GOOG",
+    "AAPL",
 ]
 # **** END EDITING HERE ****
 
