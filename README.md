@@ -13,8 +13,12 @@ This signal line is a 9 day EMA of the MACD.
 The analyzer script grabs the historical info for a select set of stocks by their tickers (the stocks are denoted in the `analyzer.py` script and can be edited to add any tickers).
 Then runs analysis to graph out the MACD and mark the different buy/sell dates.
 
-Final analysis that gets outputted shows that 10 day consensus decision ("buy" or "sell") and the latest decision.
+Final analysis that gets outputted shows a set number of days back (Default 5) and the consensus decision ("buy" or "sell") from those days as well as the latest decision.
 
+The decisions come off of a few very simple principals:
+- A bullish "buy" signal occurs when the MACD crosses above the signal line.
+- A bearish "sell" signal occurs when MACD crosses below the signal line. 
+**Useful info:** If a crossover occurs with a high sloping MACD, this can be a sign of an overbought or oversold condition, depending on if the crossover is bullish or bearish respectively. MACD is a great indicator for understanding if movement in the price is strong or weak. A weak movement is likely to correct and a strong movement is likely to continue.
 
 ## Setup
 
@@ -43,3 +47,23 @@ In the repo's directory:
 python analyzer.py
 ```
 You will see the logging output in the terminal and you can check the `files/` folder for charts and csv's for further analysis.
+
+
+## Configuration Tweaks
+
+In addition to modifying the `stocks` variable in `analyzer.py`, there are two other factors of the calculation that you can edit.
+
+Below are the defaults:
+```python
+HOW_FAR_TO_LOOK_BACK = 5  # in years
+HOW_MANY_DAYS_TO_CONSIDER = 14  # Changes the Mode of X days to look back when showing final decisions
+```
+
+HOW_FAR_TO_LOOK_BACK: Total number of years back, to fetch the stock data from. Default is set to 5 years back. **Please note:** the farther back you choose to look, the longer the script will take to finish.
+HOW_MANY_DAYS_TO_CONSIDER: When calculating the final decisions (those that are printed out in the terminal as the result), the script will take into consideration the most common decision (the mode) from a few days prior in order for the user to get a sense of what the previous inclinations (or declinations) toward this stock looked like. 
+This variable ajusts the number of days to check back. Default is set to 14 days back.
+
+## Credit where credit is due
+
+I can't take credit for all of this amazing information, so here's the link to Luke Posey's article that I based this on.
+https://towardsdatascience.com/implementing-macd-in-python-cc9b2280126a
