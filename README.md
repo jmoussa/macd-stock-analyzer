@@ -69,7 +69,9 @@ In the repo's directory:
 python analyzer.py
 ```
 You should see the logging output in the terminal as shown below, and you can check the `files/` folder for charts and csv's for further analysis.
-![Terminal Screenshot](./files/screenshot.jpg?raw=true)
+![Terminal Screenshot](./screenshots/screenshot.jpg?raw=true)
+![Plot Screenshot](./screenshots/example_plot.jpg?raw=true)
+![CSV Screenshot](./screenshots/example_csv.jpg?raw=true)
 
 ## Configuration Tweaks
 
