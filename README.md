@@ -70,6 +70,8 @@ python analyzer.py
 ```
 You should see the logging output in the terminal as shown below, and you can check the `files/` folder for charts and csv's for further analysis.
 ![Terminal Screenshot](./screenshots/screenshot.jpg?raw=true)
+
+Here is an example of what a chart and csv might look like (found in the `files/` folder after output)
 ![Plot Screenshot](./screenshots/example_plot.jpg?raw=true)
 ![CSV Screenshot](./screenshots/example_csv.jpg?raw=true)
 
