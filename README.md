@@ -30,9 +30,9 @@ You'll need access to the conda command as this is packaged into an Anaconda pyt
 
 [Quick Install Anaconda](https://docs.anaconda.com/anaconda/install/)
 
-Then open up a terminal on your computer and navigate to the place you installed this repository
+Then open up a terminal on your computer and follow the instructions below:
 ```bash
-# change directories to get into the folder of this directory
+# change directories to get into the folder of this project's directory
 cd ~/<path_to_directory>/macd-stock-analyzer
 
 # Initialize Conda
