@@ -40,7 +40,7 @@ cd ~/<path_to_directory>/macd-stock-analyzer
 pip install -r requirements.txt
 ```
 
-### Using Conda Python Virtual Environment
+### Setup with Conda Python Virtual Environments
 
 You'll need access to the conda command as this is packaged into an Anaconda python virtual environment
 [Install Anaconda here](https://docs.anaconda.com/anaconda/install/).
@@ -53,7 +53,7 @@ cd ~/<path_to_directory>/macd-stock-analyzer
 # Initialize Conda
 conda init bash
 
-# Create the environment from the template supplied in the repository
+# Create the environment from the template supplied in the repository (this handles all pip installs too)
 conda env create -f environment.yml
 
 # Activate the environment
