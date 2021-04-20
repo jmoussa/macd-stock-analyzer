@@ -1,9 +1,13 @@
 # MACD Stock Analyzer
 
+You input stocks, it outputs some suggested decisions on what to do with those stocks.
+THIS SHOULD NOT BE USED AS A DECISION-MAKER OR STOCK-PICKER, it's just an implementation of a calculation and it's outputs.
+
 ## What is MACD?
 
 Moving Average Convergence Divergence (MACD) is a trend following indicator.
-MACD can be calculated very simply by subtracting the 26 period EMA from the 12 period EMA.
+MACD can be calculated very simply by subtracting the 26 period EMA (exponential moving average) from the 12 period EMA. 
+The EMA is a type of moving average (MA) that places a greater weight and significance on the most recent data points.
 MACD is commonly used by analyzing crossovers, divergences, and periods of steep slope (positive or negative). 
 Along with the MACD line (from subtracting the 12 period EMA from the 16 period EMA) the chart commonly will include a signal line plotted on top of the MACD. 
 This signal line is a 9 day EMA of the MACD.
