@@ -25,19 +25,35 @@ The decisions come off of a few very simple principals:
 **Useful info:** If a crossover occurs with a high sloping MACD, this can be a sign of an overbought or oversold condition, depending on if the crossover is bullish or bearish respectively. MACD is a great indicator for understanding if movement in the price is strong or weak. A weak movement is likely to correct and a strong movement is likely to continue.
 
 ## Setup
+I initially used the conda python virtual environments but I have added a requirements.txt so you can setup the dependencies without conda.
+Both setup methods are shown below, choose either, or both. I'm not going to tell you how to live your life.
 
-You'll need access to the conda command as this is packaged into an Anaconda python virtual environment.
+### Setup with Python Pip
+First you'll need to have python (which I think comes with MacOS) and pip installed [install pip here](https://pip.pypa.io/en/stable/installing/).
 
-[Quick Install Anaconda](https://docs.anaconda.com/anaconda/install/)
-Then open up a terminal on your computer and navigate to the place you installed this repository
+Open up a terinal and follow the directions below:
 ```bash
-# change directories to get into the folder of this directory
+# change directories to get into the folder of this project's directory
+cd ~/<path_to_directory>/macd-stock-analyzer
+
+# Install requirments
+pip install -r requirements.txt
+```
+
+### Setup with Conda Python Virtual Environments
+
+You'll need access to the conda command as this is packaged into an Anaconda python virtual environment
+[Install Anaconda here](https://docs.anaconda.com/anaconda/install/).
+
+Then open up a terminal and follow the instructions below:
+```bash
+# change directories to get into the folder of this project's directory
 cd ~/<path_to_directory>/macd-stock-analyzer
 
 # Initialize Conda
 conda init bash
 
-# Create the environment from the template supplied in the repository
+# Create the environment from the template supplied in the repository (this handles all pip installs too)
 conda env create -f environment.yml
 
 # Activate the environment
