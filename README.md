@@ -29,6 +29,7 @@ The decisions come off of a few very simple principals:
 You'll need access to the conda command as this is packaged into an Anaconda python virtual environment.
 
 [Quick Install Anaconda](https://docs.anaconda.com/anaconda/install/)
+
 Then open up a terminal on your computer and navigate to the place you installed this repository
 ```bash
 # change directories to get into the folder of this directory
