@@ -1,6 +1,10 @@
 # MACD Stock Analyzer
 > Analyze specific stocks' MACD and gain further insight into stock trends
 
+## The Goal
+The goal with this analyzer is to gain better insight and to identify strong and weak movements in a stock's price.
+To do this we use the MACD and it's Signal Line to identify crossovers and classify them as bullish "buy" or bearish "sell" (more seen in the outputted csv files and plots).
+
 ## What is MACD?
 
 Moving Average Convergence Divergence (MACD) is a trend following indicator.
