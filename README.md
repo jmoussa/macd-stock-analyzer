@@ -2,11 +2,12 @@
 > Analyze specific stocks' MACD and gain further insight into stock trends
 
 ## The Goal
+---
 The goal with this analyzer is to gain better insight and to identify strong and weak movements in a stock's price.
 To do this we use the MACD and it's Signal Line to identify crossovers and classify them as bullish "buy" or bearish "sell" (more seen in the outputted csv files and plots).
 
 ## What is MACD?
-
+---
 Moving Average Convergence Divergence (MACD) is a trend following indicator.
 MACD can be calculated very simply by subtracting the 26 period EMA (exponential moving average) from the 12 period EMA. 
 The EMA is a type of moving average (MA) that places a greater weight and significance on the most recent data points.
@@ -15,7 +16,7 @@ Along with the MACD line (from subtracting the 12 period EMA from the 16 period 
 This signal line is a 9 day EMA of the MACD.
 
 ## The analyzer
-
+---
 The analyzer script grabs the historical info for a select set of stocks by their tickers (the stocks are denoted in the `analyzer.py` script and can be edited to add any tickers).
 Then runs analysis to graph out the MACD and mark the different buy/sell dates.
 
@@ -27,8 +28,13 @@ The decisions come off of a few very simple principals:
 **Useful info:** If a crossover occurs with a high sloping MACD, this can be a sign of an overbought or oversold condition, depending on if the crossover is bullish or bearish respectively. MACD is a great indicator for understanding if movement in the price is strong or weak. A weak movement is likely to correct and a strong movement is likely to continue.
 
 ## Setup
-I initially used the conda python virtual environments but I have added a requirements.txt so you can setup the dependencies without conda.
-Both setup methods are shown below, choose either, or both. I'm not going to tell you how to live your life.
+---
+There are two ways to setup the environment:
+
+- Using requirements.txt (pip with no environments)
+- Using environment.yml (Anaconda/Conda Environments)
+
+Both setup methods are shown below, you can choose either, or both. I'm not going to tell you how to live your life.
 
 ### Setup with Python Pip
 First you'll need to have python (which I think comes with MacOS) and pip installed [install pip here](https://pip.pypa.io/en/stable/installing/).
@@ -63,6 +69,7 @@ conda activate finance
 ```
 
 ## To Run
+---
 In the repo's directory:
 
 ```bash
@@ -77,7 +84,7 @@ It should be noted that these are both for the stock of Coca Cola (KO), and that
 ![CSV Screenshot](./screenshots/example_csv.jpg?raw=true)
 
 ## Configuration Tweaks
-
+---
 In addition to modifying the `stocks` variable in `analyzer.py`, there are two other factors of the calculation that you can edit.
 
 Below are the defaults:
@@ -93,12 +100,12 @@ HOW_MANY_DAYS_TO_CONSIDER = 14  # Changes the Mode of X days to look back when s
 This variable adjusts the number of days to check back. Default is set to 14 days back.
 
 ## Credit where credit is due
-
+---
 I can't take credit for all of this amazing information, so here's the link to Luke Posey's article that I based this on.
 https://towardsdatascience.com/implementing-macd-in-python-cc9b2280126a
 
 
 ## DISCLAIMER
-
+---
 The results presented here are not to be taken as financial advice with regards to how and when to pick your stocks. 
 These are outputs based on an alogrithm, and any actions taken as a result of these outputs should not be done without conducting proper research and consulting professionals.
